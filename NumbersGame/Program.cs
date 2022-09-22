@@ -279,6 +279,42 @@ namespace NumbersGame
             Console.ReadKey();
         }
 
+        public static void ChoseDif()
+        {
+            Console.WriteLine("Välj en svårighetsgrad på spelet");
+            Console.WriteLine();
+            Console.WriteLine("1) nummer 1-20 med 5 stycekn försök");
+            Console.WriteLine("2) nummer 1-50 med 10 stycekn försök");
+            Console.WriteLine("3) nummer 1-100 med 15 stycken försök");
+
+            int UserChoiceDif = int.Parse(Console.ReadLine());
+
+            if (UserChoiceDif == 1)
+            {
+                CheckGuessEasy();
+
+            }
+            if (UserChoiceDif == 2)
+            {
+                CheckGuessMedium();
+            }
+
+            if (UserChoiceDif == 3)
+
+            {
+                CheckGuessHard();
+            }
+
+            else
+            {
+                Console.WriteLine("Invalid request");
+                ChoseDif();
+
+            }
+
+
+        }
+
 
 
     }
