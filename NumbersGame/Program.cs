@@ -7,7 +7,9 @@ namespace NumbersGame
     {
         static void Main(string[] args)
         {
-            
+            Console.WriteLine("Välkommen till nummergissings spelet");
+            Console.WriteLine();
+           
 
             
         }
