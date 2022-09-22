@@ -9,6 +9,8 @@ namespace NumbersGame
         {
             Console.WriteLine("Välkommen till nummergissings spelet");
             Console.WriteLine();
+
+            ChoseDif();
            
 
             
